@@ -1,499 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khaeril Anwar</title>
-    <!-- Link Favicon -->
-    <link
-      rel="shortcut icon"
-      href="/assets/img/logo mka.ico"
-      type="image/x-icon"
-    />
-    <!-- Link CSS TailwindCSS -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <!-- CDN FONTAWESOME -->
-    <script
-      src="https://kit.fontawesome.com/addf044e73.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- link CDN Flowbite -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"
-      rel="stylesheet"
-    />
-    <!-- Link Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class="dark:bg-slate-900">
-    <!-- NVABAR -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a href="https://flowbite.com/" class="flex items-center">
-          <img
-            src="/assets/img/logo mka.png"
-            class="h-8 mr-3"
-            alt="Flowbite Logo"
-          />
-          <span
-            class="self-center text-2xl font-courgette text-black font-semibold whitespace-nowrap dark:text-white"
-            >Halo Anwar</span
-          >
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Tutorial</a
-              >
-            </li>
-            <li>
-              <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-              >
-                Projects
-                <svg
-                  class="w-2.5 h-2.5 ml-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
-              <!-- Dropdown menu -->
-              <div
-                id="dropdownNavbar"
-                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-              >
-                <ul
-                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                  aria-labelledby="dropdownLargeButton"
-                >
-                  <li>
-                    <a
-                      href="/machinelearning"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Machine Learning</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/webdevelopment"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Web Development</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Tentang</a
-              >
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khaeril Anwar</title>
+  <!-- Link Favicon -->
+  <link rel="shortcut icon" href="/assets/img/logo mka.ico" type="image/x-icon" />
+  <!-- Link CSS TailwindCSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <!-- CDN FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/addf044e73.js" crossorigin="anonymous"></script>
+  <!-- link CDN Flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+  <!-- Link Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet" />
+</head>
+
+<body class="dark:bg-slate-900">
+  <!-- NVABAR -->
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center">
+        <img src="/assets/img/logo mka.png" class="h-8 mr-3" alt="Flowbite Logo" />
+        <span
+          class="self-center text-2xl font-courgette text-black font-semibold whitespace-nowrap dark:text-white">Halo
+          Anwar</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="/"
+              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Tutorial</a>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              Projects
+              <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="/machinelearning"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Machine
+                    Learning</a>
+                </li>
+                <li>
+                  <a href="/webdevelopment"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
+                    Development</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Tentang</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- END NAVBAR -->
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
 
-    <section
-      class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply"
-    >
-      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-        <h1
-          class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
-        >
-          Oww, Hello there its me Khaeril
-        </h1>
-        <p
-          class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
-        >
-          Here I will share my experience and knowledge in the field of
-          information technology and you can see and try the materials and
-          results that I have worked on
+  <section
+    class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+        Oww, Hello there its me Khaeril
+      </h1>
+      <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+        Here I will share my experience and knowledge in the field of
+        information technology and you can see and try the materials and
+        results that I have worked on
+      </p>
+      <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+        <a href="#field"
+          class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+          Get started
+          <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="field" class="bg-white dark:bg-gray-900 antialiased">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+      <div class="max-w-2xl mx-auto text-center pb-10">
+        <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+          Bidang Teknologi apa ?
+        </h2>
+        <p class="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
+          Saya berpengalaman dibidang teknologi informasi seperti
         </p>
-        <div
-          class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
-        >
-          <a
-            href="#field"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-          >
-            Get started
-            <svg
-              class="w-3.5 h-3.5 ml-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
+      </div>
+
+      <div class="grid grid-cols-1 mt-5 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-2">
+        <div class="space-y-4">
+          <img src="/assets/img/web dev.png" alt="" class="w-20 h-20 object-cover mx-auto" />
+          <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+            Web Development
+          </h3>
+          <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+            Saya biasa menggunakan CodeIgniter untuk PHP dan Django untuk
+            Python dalam membuat sebuah aplikasi.
+          </p>
+          <a href="#" title=""
+            class="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            role="button">
+            View case study
+            <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="space-y-4">
+          <img src="/assets/img/ml.png" alt="" class="w-20 h-20 object-cover mx-auto" />
+          <h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+            Machine Learning
+          </h3>
+          <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+            Saya menggunakan TensorFlow untuk membuat berbagai model
+            Supervised Learning Algorithm.
+          </p>
+          <a href="#" title=""
+            class="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            role="button">
+            View case study
+            <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
             </svg>
           </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="field" class="bg-white dark:bg-gray-900 antialiased">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
-        <div class="max-w-2xl mx-auto text-center pb-10">
-          <h2
-            class="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white"
-          >
-            Bidang Teknologi apa ?
-          </h2>
-          <p
-            class="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400"
-          >
-            Saya berpengalaman dibidang teknologi informasi seperti
-          </p>
-        </div>
-
-        <div
-          class="grid grid-cols-1 mt-5 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-2"
-        >
-          <div class="space-y-4">
-            <img
-              src="/assets/img/web dev.png"
-              alt=""
-              class="w-20 h-20 object-cover mx-auto"
-            />
-            <h3
-              class="text-2xl font-bold leading-tight text-gray-900 dark:text-white"
-            >
-              Web Development
-            </h3>
-            <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-              Saya biasa menggunakan CodeIgniter untuk PHP dan Django untuk
-              Python dalam membuat sebuah aplikasi.
-            </p>
-            <a
-              href="#"
-              title=""
-              class="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-              role="button"
-            >
-              View case study
-              <svg
-                aria-hidden="true"
-                class="w-5 h-5 ml-2 -mr-1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-          </div>
-
-          <div class="space-y-4">
-            <img
-              src="/assets/img/ml.png"
-              alt=""
-              class="w-20 h-20 object-cover mx-auto"
-            />
-            <h3
-              class="text-2xl font-bold leading-tight text-gray-900 dark:text-white"
-            >
-              Machine Learning
-            </h3>
-            <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-              Saya menggunakan TensorFlow untuk membuat berbagai model
-              Supervised Learning Algorithm.
-            </p>
-            <a
-              href="#"
-              title=""
-              class="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-              role="button"
-            >
-              View case study
-              <svg
-                aria-hidden="true"
-                class="w-5 h-5 ml-2 -mr-1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-slate-100 dark:bg-gray-900">
-      <div
-        class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
-      >
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2
-            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-          >
-            Berbagi pengalaman dan pengetahuan
-          </h2>
-          <p class="mb-4">
-            Di website ini author akan berbagi pengalaman dan pengetahuan yang
-            author dapat baik dari pendidikan maupun pengalaman yang author
-            alami. Author akan memfokuskan ke bidang Machine Learning dan Web
-            Development.
-          </p>
-          <p>Dan juga tips dan tricks sebagai dokumentasi author.</p>
-        </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-          <img
-            class="w-full rounded-lg"
-            src="/assets/img/mldev.jpeg"
-            alt="office content 1"
-          />
-          <img
-            class="mt-4 w-full lg:mt-10 rounded-lg"
-            src="/assets/img/webdev.jpeg"
-            alt="office content 2"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-white dark:bg-gray-900 my-16">
-      <div class="container mx-auto">
-        <h1
-          class="text-center sm:text-4xl text-3xl font-bold dark:text-white mb-5"
-        >
-          Author
-        </h1>
-
-        <div
-          class="rounded-full hidden sm:block w-80 h-80 bg-white mx-auto overflow-hidden mb-4"
-        >
-          <img
-            class="rounded-full w-80 h-80 object-contain mx-auto translate-y-5 scale-110"
-            src="/assets/img/Pas Foto Putih.jpg"
-            alt="Author Halo Kak"
-          />
-        </div>
-        <div
-          class="rounded-full sm:hidden w-52 h-52 bg-white mx-auto overflow-hidden mb-4"
-        >
-          <img
-            class="rounded-full w-52 h-52 object-contain mx-auto translate-y-5 scale-110"
-            src="/assets/img/Pas Foto Putih.jpg"
-            alt="Author Halo Kak"
-          />
-        </div>
-        <h2 class="text-center text-xl sm:text-2xl dark:text-white font-medium">
-          Muhammad Khaeril Anwar
+  <section class="bg-slate-100 dark:bg-gray-900">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+      <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+          Berbagi pengalaman dan pengetahuan
         </h2>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="p-4 bg-slate-100 md:p-8 lg:p-10 dark:bg-gray-800">
-      <div class="mx-auto max-w-screen-xl text-center">
-        <a
-          href="#"
-          class="flex justify-center font-courgette text-black items-center text-2xl font-semibold dark:text-white"
-        >
-          <img src="/assets/img/logo mka.png" class="h-8 mr-3" alt="MKA Logo" />
-          Halo Anwar
-        </a>
-        <p class="my-6 text-gray-500 dark:text-gray-400 italic">
-          “Tidak masalah seberapa lambat Anda berjalan asalkan Anda tidak
-          berhenti.""
+        <p class="mb-4">
+          Di website ini author akan berbagi pengalaman dan pengetahuan yang
+          author dapat baik dari pendidikan maupun pengalaman yang author
+          alami. Author akan memfokuskan ke bidang Machine Learning dan Web
+          Development.
         </p>
-        <ul
-          class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
-        >
-          <li>
-            <a
-              href="https://github.com/khaerilanwar"
-              target="_blank"
-              class="mr-4 hover:underline md:mr-6"
-              >Github</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UCobKryu4ZwDlKOOqw-lPjUA"
-              target="_blank"
-              class="mr-4 hover:underline md:mr-6"
-              >Youtube</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/saryat.saryat"
-              target="_blank"
-              class="mr-4 hover:underline md:mr-6"
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/khaerilanwr_/"
-              target="_blank"
-              class="mr-4 hover:underline md:mr-6"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/muhammad-khaeril-anwar-09a538227/"
-              target="_blank"
-              class="mr-4 hover:underline md:mr-6"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-          >© 2023
-          <a href="/" class="hover:underline font-courgette">Halo Anwar</a>. All
-          Rights Reserved.</span
-        >
+        <p>Dan juga tips dan tricks sebagai dokumentasi author.</p>
       </div>
-    </footer>
-    <!-- END FOOTER -->
-
-    <!-- TOMBOL UNTUK MENGGANTI DARK DAN LIGHT MODE -->
-    <input type="checkbox" id="toggle" class="hidden" />
-    <label for="toggle">
-      <div
-        data-tooltip-target="tooltip-left"
-        data-tooltip-placement="left"
-        class="fixed bottom-2 right-2 mb-2 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer"
-      >
-        <i id="ikon" class="m-auto fa-solid fa-moon"></i>
+      <div class="grid grid-cols-2 gap-4 mt-8">
+        <img class="w-full rounded-lg" src="/assets/img/mldev.jpeg" alt="office content 1" />
+        <img class="mt-4 w-full lg:mt-10 rounded-lg" src="/assets/img/webdev.jpeg" alt="office content 2" />
       </div>
-      <div
-        id="tooltip-left"
-        role="tooltip"
-        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-      >
-        dark
-        <div class="tooltip-arrow" data-popper-arrow></div>
+    </div>
+  </section>
+
+  <section class="bg-white dark:bg-gray-900 my-16">
+    <div class="container mx-auto">
+      <h1 class="text-center sm:text-4xl text-3xl font-bold dark:text-white mb-5">
+        Author
+      </h1>
+
+      <div class="rounded-full hidden sm:block w-80 h-80 bg-white mx-auto overflow-hidden mb-4">
+        <img class="rounded-full w-80 h-80 object-contain mx-auto translate-y-5 scale-110"
+          src="/assets/img/Pas Foto Putih.jpg" alt="Author Halo Kak" />
       </div>
-    </label>
-    <!-- END TOMBOL UNTUK MENGGANTI DARK DAN LIGHT MODE -->
+      <div class="rounded-full sm:hidden w-52 h-52 bg-white mx-auto overflow-hidden mb-4">
+        <img class="rounded-full w-52 h-52 object-contain mx-auto translate-y-5 scale-110"
+          src="/assets/img/Pas Foto Putih.jpg" alt="Author Halo Kak" />
+      </div>
+      <h2 class="text-center text-xl sm:text-2xl dark:text-white font-medium">
+        Muhammad Khaeril Anwar
+      </h2>
+    </div>
+  </section>
 
-    <!-- link cdn Flowbite -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
-    <!-- link js -->
-    <script>
-      // KODE JS UNTUK TOMBOL DARK MODE
-      const checkbox = document.querySelector("#toggle");
-      const tooltip = document.querySelector("#tooltip-left");
-      const html = document.querySelector("html");
-      const ikon = document.querySelector("#ikon");
+  <!-- FOOTER -->
+  <footer class="p-4 bg-slate-100 md:p-8 lg:p-10 dark:bg-gray-800">
+    <div class="mx-auto max-w-screen-xl text-center">
+      <a href="#"
+        class="flex justify-center font-courgette text-black items-center text-2xl font-semibold dark:text-white">
+        <img src="/assets/img/logo mka.png" class="h-8 mr-3" alt="MKA Logo" />
+        Halo Anwar
+      </a>
+      <p class="my-6 text-gray-500 dark:text-gray-400 italic">
+        “Tidak masalah seberapa lambat Anda berjalan asalkan Anda tidak
+        berhenti.""
+      </p>
+      <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+        <li>
+          <a href="https://github.com/khaerilanwar" target="_blank" class="mr-4 hover:underline md:mr-6">Github</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCobKryu4ZwDlKOOqw-lPjUA" target="_blank"
+            class="mr-4 hover:underline md:mr-6">Youtube</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/saryat.saryat" target="_blank"
+            class="mr-4 hover:underline md:mr-6">Facebook</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/khaerilanwr_/" target="_blank"
+            class="mr-4 hover:underline md:mr-6">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/muhammad-khaeril-anwar-09a538227/" target="_blank"
+            class="mr-4 hover:underline md:mr-6">LinkedIn</a>
+        </li>
+      </ul>
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
+        <a href="/" class="hover:underline font-courgette">Halo Anwar</a>. All
+        Rights Reserved.</span>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
 
-      checkbox.addEventListener("change", function (event) {
-        // Mendapatkan status checked checkbox
-        var isChecked = event.target.checked;
+  <!-- TOMBOL UNTUK MENGGANTI DARK DAN LIGHT MODE -->
+  <input type="checkbox" id="toggle" class="hidden" />
+  <label for="toggle">
+    <div data-tooltip-target="tooltip-left" data-tooltip-placement="left"
+      class="fixed bottom-2 right-2 mb-2 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer">
+      <i id="ikon" class="m-auto fa-solid fa-moon"></i>
+    </div>
+    <div id="tooltip-left" role="tooltip"
+      class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+      dark
+      <div class="tooltip-arrow" data-popper-arrow></div>
+    </div>
+  </label>
+  <!-- END TOMBOL UNTUK MENGGANTI DARK DAN LIGHT MODE -->
 
-        // Melakukan sesuatu ketika status checked berubah
-        if (isChecked) {
-          console.log("Checkbox dicentang");
-          sessionStorage.setItem("darkMode", "true");
-          console.log(sessionStorage.getItem("darkMode"));
-          // Lakukan tindakan yang diinginkan ketika checkbox dicentang
-        } else {
-          console.log("Checkbox tidak dicentang");
-          sessionStorage.removeItem("darkMode");
-          sessionStorage.setItem("darkMode", "false");
-          console.log(sessionStorage.getItem("darkMode"));
-          // Lakukan tindakan yang diinginkan ketika checkbox tidak dicentang
-        }
+  <!-- link cdn Flowbite -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+  <!-- link js -->
+  <script>
+    // KODE JS UNTUK TOMBOL DARK MODE
+    const checkbox = document.querySelector("#toggle");
+    const tooltip = document.querySelector("#tooltip-left");
+    const html = document.querySelector("html");
+    const ikon = document.querySelector("#ikon");
 
-        if (sessionStorage.getItem("darkMode") === "true") {
-          // Terapkan gaya dark mode
-          html.classList.add("dark");
-          tooltip.innerHTML = "light";
-          ikon.classList.replace("fa-moon", "fa-lightbulb");
-        } else {
-          // Terapkan gaya light mode
-          ikon.classList.replace("fa-lightbulb", "fa-moon");
-          tooltip.innerHTML = "dark";
-          html.classList.remove("dark");
-        }
-      });
+    checkbox.addEventListener("change", function (event) {
+      // Mendapatkan status checked checkbox
+      var isChecked = event.target.checked;
+
+      // Melakukan sesuatu ketika status checked berubah
+      if (isChecked) {
+        console.log("Checkbox dicentang");
+        sessionStorage.setItem("darkMode", "true");
+        console.log(sessionStorage.getItem("darkMode"));
+        // Lakukan tindakan yang diinginkan ketika checkbox dicentang
+      } else {
+        console.log("Checkbox tidak dicentang");
+        sessionStorage.removeItem("darkMode");
+        sessionStorage.setItem("darkMode", "false");
+        console.log(sessionStorage.getItem("darkMode"));
+        // Lakukan tindakan yang diinginkan ketika checkbox tidak dicentang
+      }
 
       if (sessionStorage.getItem("darkMode") === "true") {
         // Terapkan gaya dark mode
@@ -506,6 +310,20 @@
         tooltip.innerHTML = "dark";
         html.classList.remove("dark");
       }
-    </script>
-  </body>
+    });
+
+    if (sessionStorage.getItem("darkMode") === "true") {
+      // Terapkan gaya dark mode
+      html.classList.add("dark");
+      tooltip.innerHTML = "light";
+      ikon.classList.replace("fa-moon", "fa-lightbulb");
+    } else {
+      // Terapkan gaya light mode
+      ikon.classList.replace("fa-lightbulb", "fa-moon");
+      tooltip.innerHTML = "dark";
+      html.classList.remove("dark");
+    }
+  </script>
+</body>
+
 </html>
