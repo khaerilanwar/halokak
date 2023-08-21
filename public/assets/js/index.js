@@ -44,9 +44,37 @@ const video = document.getElementById('wc');
 const canvas = document.getElementById('view-image');
 const captureButton = document.getElementById('startPredicting');
 
-async function setupWebcam() {
-    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-    video.srcObject = stream;
+function setupWebcam() {
+    // Memeriksa apakah perangkat mendukung getUserMedia
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function(stream) {
+        // Menampilkan video dari kamera di elemen video
+        var video = document.getElementById('wc');
+        video.srcObject = stream;
+        video.play();
+      })
+      .catch(function(error) {
+        console.error('Tidak dapat mengaktifkan kamera:', error);
+      });
+  }
+  
+}
+
+function unsetupWebcam() {
+    // Mendapatkan elemen video
+var video = document.getElementById('wc');
+
+// Menghentikan streaming dari kamera
+var stream = video.srcObject;
+var tracks = stream.getTracks();
+tracks.forEach(function(track) {
+  track.stop();
+});
+
+// Menghilangkan sumber streaming dan menghentikan pemutaran video
+video.srcObject = null;
+
 }
 
 async function sendImageToApi(base64Image) {
@@ -104,4 +132,18 @@ function cobaApi() {
 }
 
 
-setupWebcam();
+const buttonModel = document.getElementById("btn-model");
+const modelRps = document.getElementById("model-rps");
+buttonModel.addEventListener("click", function() {
+    if (buttonModel.innerText === 'Coba Model') {
+        buttonModel.querySelector("span").innerText = 'Tutup Model';
+        modelRps.classList.add("flex");
+        modelRps.classList.remove("hidden");
+        setupWebcam();
+    } else {
+        buttonModel.querySelector("span").innerText = 'Coba Model';
+        modelRps.classList.add("hidden");
+        modelRps.classList.remove("flex");
+        unsetupWebcam();
+    }
+})
