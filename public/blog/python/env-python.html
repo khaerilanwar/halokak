@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khaeril Anwar</title>
+    <!-- Link Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/assets/img/logo mka.ico"
+      type="image/x-icon"
+    />
+    <!-- Link CSS TailwindCSS -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- CDN FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/addf044e73.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link CDN Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="dark:bg-slate-900">
+    <!-- NVABAR -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="https://flowbite.com/" class="flex items-center">
+          <img
+            src="/assets/img/logo mka.png"
+            class="h-8 mr-3"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-2xl font-courgette text-black font-semibold whitespace-nowrap dark:text-white"
+            >Halo Anwar</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="/"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Tutorial</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+              >
+                Projects
+                <svg
+                  class="w-2.5 h-2.5 ml-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="/machinelearning"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Machine Learning</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/webdevelopment"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Web Development</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="/blog"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="/tentang"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-md lg:py-16">
+        <img
+          class="h-auto max-w-full"
+          src="/assets/img/env python.jpg"
+          alt="image description"
+        />
+
+        <h1
+          class="text-gray-900 text-center mt-8 dark:text-white text-3xl md:text-3xl font-bold mb-8"
+        >
+          Membuat Virtual Environment Python
+        </h1>
+
+        <div id="accordion-collapse" data-accordion="open">
+          <h2 id="accordion-collapse-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-collapse-body-1"
+            >
+              <span>Apa itu Python Virtual Environment?</span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-1"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-1"
+          >
+            <div
+              class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900 sm:overflow-hidden overflow-scroll"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400 text-lg">
+                Virtualenv adalah tools untuk membuat lingkungan python virtual
+                yang terisolasi.
+              </p>
+              <p class="mb-2 text-gray-500 dark:text-gray-400 text-lg">
+                Terisolasi artinya tertutup dan tidak bisa diakses dari dunia
+                luar.
+              </p>
+              <img
+                class="h-auto max-w-full my-6 rounded-md"
+                src="/assets/img/virtualenv-python.png"
+                alt="image description"
+              />
+              <p class="mb-2 text-gray-500 dark:text-gray-400 text-lg">
+                Program Python yang berjalan di dalam virtualenv memiliki
+                modul-modulnya sendiri dan program dari luar tidak bisa
+                mengaksesnya.
+              </p>
+              <p class="mb-2 text-gray-500 dark:text-gray-400 text-lg">
+                Sedangkan program Python yang berjalan tanpa vritualenv hanya
+                bisa menggunakan modul-modul global saja, yang berada di
+                <span
+                  class="bg-slate-500 text-base text-white py-1 px-2 rounded-md inline-block mt-1 mr-2"
+                  >C:\Users\USER\AppData\Local\Programs\Python\Python311\python.exe</span
+                >
+                jika anda menginstall python di Windows.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-2"
+            >
+              <span>Kenapa Menggunakan Virtual Environment? </span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-2"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-2"
+          >
+            <div
+              class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 sm:overflow-hidden overflow-scroll"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400 text-lg">
+                Saat kita menginstal modul/library menggunakan
+                <span class="bg-slate-500 text-white p-1 rounded-md text-base"
+                  >pip</span
+                >, modulnya akan terinstal secara global di
+                <span class="bg-slate-500 text-white p-1 rounded-md text-base"
+                  >C:\Users\USER\AppData\Local\Programs\Python\Python311\Lib</span
+                >. Semua aplikasi bisa mengakses dan menggunakannya.
+              </p>
+              <p class="text-gray-500 dark:text-gray-400 text-lg">
+                Apakah ini bagus ? <br />
+                Iya bagus, Python virtualvenv memiliki banyak manfaat, terutama
+                dalam pengembangan aplikasi Python. Berikut beberapa fungsi dari
+                penggunaan Python virtual environment:
+              </p>
+              <ol
+                class="space-y-4 sm:text-lg mt-2 mb-4 text-gray-500 list-decimal list-inside dark:text-gray-400 text-lg"
+              >
+                <li class="font-medium">
+                  Isolasi Dependensi
+                  <p class="font-normal pl-5 space-y-1">
+                    Setiap proyek Python memiliki dependensi dan library sendiri
+                    yang mungkin berbeda dengan proyek lainnya. Dengan Virtual
+                    Environment, kita dapat memastikan setiap proyek memiliki
+                    environment kerja sendiri dengan dependensi yang tepat dan
+                    tidak akan berkonflik dengan proyek lain.
+                  </p>
+                </li>
+                <li class="font-medium">
+                  Konsistensi Versi
+                  <p class="font-normal pl-5 space-y-1">
+                    Dalam proyek berskala besar, ada kemungkinan berbagai
+                    library dan dependensi memiliki versi berbeda-beda.
+                    Menggunakan Python Virtual Environment, kita dapat
+                    memastikan setiap proyek menggunakan versi library yang
+                    tepat dan konsisten, sehingga mengurangi potensi masalah
+                    kompatibilitas.
+                  </p>
+                </li>
+
+                <li class="font-medium">
+                  Pemeliharaan dan deployment yang mudah
+                  <p class="font-normal pl-5 space-y-1">
+                    Virtual Environment memudahkan proses deployment dan
+                    pemeliharaan aplikasi. Dikarenakan semua dependensi disimpan
+                    dalam satu environment, proses penyebaran aplikasi ke server
+                    atau mesin lainnya juga berjalan lebih mudah.
+                  </p>
+                </li>
+                <li class="font-medium">
+                  Melakukan testing dengan lebih baik
+                  <p class="font-normal pl-5 space-y-1">
+                    Dengan adanya Virtual Environment, kita dapat lebih mudah
+                    melakukan pengujian terhadap aplikasi kita. Misalnya, kita
+                    bisa menguji aplikasi dengan berbagai versi Python atau
+                    library tertentu untuk memastikan kompatibilitas dan
+                    stabilitas aplikasi.
+                  </p>
+                </li>
+                <img
+                  class="h-auto max-w-full my-6 rounded-md"
+                  src="/assets/img/penggunaan-virtualenv.png"
+                  alt="image description"
+                />
+              </ol>
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-3"
+            >
+              <span>Bagaimana Cara Menginstal Virtual Environment?</span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-3"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-3"
+          >
+            <div
+              class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Untuk membuat Python virtual environment, berikut
+                langkah-langkahnya:
+              </p>
+              <ol
+                class="space-y-4 sm:text-lg mt-2 mb-4 text-gray-500 list-decimal list-inside dark:text-gray-400 text-lg"
+              >
+                <li class="font-medium">
+                  Buka Terminal atau Command Prompt
+                  <p class="font-normal pl-5 space-y-1">
+                    Langkah pertama dalam membuat virtual environment adalah
+                    membuka terminal (untuk Linux atau MacOS) dan Command Prompt
+                    (untuk Windows) pada komputer. Jika menggunakan bisa
+                    menggunakan shortcut
+                    <kbd
+                      class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                      >Windows</kbd
+                    >
+                    +
+                    <kbd
+                      class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                      >R</kbd
+                    >
+                    lalu ketik
+                    <kbd
+                      class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                      >CMD</kbd
+                    >
+                    dan tekan
+                    <kbd
+                      class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                      >Enter</kbd
+                    >
+                    atau klik
+                    <kbd
+                      class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500"
+                      >OK</kbd
+                    >
+                  </p>
+
+                  <img
+                    class="h-auto w-72 sm:w-96 rounded-lg mx-auto mt-6"
+                    src="/assets/img/open cmd.png"
+                    alt="image description"
+                  />
+                </li>
+                <li class="font-medium">
+                  Pindah ke direktori proyek
+                  <p class="sm:text-lg font-normal pl-5 space-y-1">
+                    Setelah itu, pindah ke direktori di mana kamu ingin membuat
+                    virtual environment. Untuk melakukan ini, kamu bisa
+                    menggunakan perintah cd.
+                  </p>
+                  <div
+                    class="border border-slate-400 bg-black p-2 my-2 ml-5 rounded-md"
+                  >
+                    <p class="font-courier text-white text-base sm:text-lg">
+                      cd Documents/&lt;nama folder project&gt;
+                    </p>
+                  </div>
+                  <p class="sm:text-lg font-normal pl-5 space-y-1">
+                    Ganti dengan path direktori tempat kamu ingin membuat
+                    virtual environment. Misalnya,
+                    <span class="italic">cd Documents/my_project</span>
+                  </p>
+                </li>
+
+                <li class="font-medium">
+                  Buat virtual environment
+                  <p class="sm:text-lg font-normal pl-5 space-y-1">
+                    Setelah kamu masuk ke direktori project, kamu bisa membuat
+                    virtual environment python lewat cmd, dengan menuliskan
+                    perintah
+                  </p>
+                  <div
+                    class="border border-slate-400 bg-black p-2 my-2 ml-5 rounded-md"
+                  >
+                    <p class="font-courier text-white text-base sm:text-lg">
+                      python -m venv &lt;nama folder&gt;
+                    </p>
+                  </div>
+                  <p class="sm:text-lg font-normal pl-5 space-y-1">
+                    Ganti dengan nama direktori yang kamu inginkan untuk nama
+                    folder dari virtual environment python kamu. Misalnya,
+                    <span class="italic">python -m venv env</span>.
+                  </p>
+                </li>
+
+                <li class="font-medium">
+                  Aktifkan virtual environment
+                  <p class="sm:text-lg font-normal pl-5 space-y-1">
+                    Jika sudah berhasil membuat virtual environment, langkah
+                    selanjutnya yaitu mengaktifkannya.
+                  </p>
+                  <p class="sm:text-lg font-normal pl-5 space-y-1">
+                    Kamu bisa mengaktikan virtual environment dengan mengetikkan
+                  </p>
+                  <p class="sm:text-lg font-normal pl-5 space-y-1">Windows</p>
+                  <div
+                    class="border border-slate-400 bg-black p-2 my-2 ml-5 rounded-md"
+                  >
+                    <p class="font-courier text-white text-base sm:text-lg">
+                      &lt;nama folder&gt;\Scripts\activate
+                    </p>
+                  </div>
+                  <p class="sm:text-lg font-normal pl-5 space-y-1">
+                    Linux/MacOs
+                  </p>
+                  <div
+                    class="border border-slate-400 bg-black p-2 my-2 ml-5 rounded-md"
+                  >
+                    <p class="font-courier text-white text-base sm:text-lg">
+                      source &lt;nama folder&gt;/bin/activate
+                    </p>
+                  </div>
+                  <p class="sm:text-lg font-normal pl-5 space-y-1">
+                    Setelah virtual environment aktif, maka disebelah kiri
+                    terminal akan ada tulisan
+                    <span class="font-bold">(env)</span>.
+                  </p>
+                  <p class="sm:text-lg font-normal pl-5 space-y-1">
+                    Ketika virtual environment baru dibuat, library package
+                    masih kosong. Kamu bisa menambahkan library khusus untuk
+                    project yang akan kamu buat seperti Django atau TensorFlow.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="p-4 bg-slate-100 md:p-8 lg:p-10 dark:bg-gray-800">
+      <div class="mx-auto max-w-screen-xl text-center">
+        <a
+          href="#"
+          class="flex justify-center font-courgette text-black items-center text-2xl font-semibold dark:text-white"
+        >
+          <img src="/assets/img/logo mka.png" class="h-8 mr-3" alt="MKA Logo" />
+          Halo Anwar
+        </a>
+        <p class="my-6 text-gray-500 dark:text-gray-400 italic">
+          “Tidak masalah seberapa lambat Anda berjalan asalkan Anda tidak
+          berhenti.""
+        </p>
+        <ul
+          class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
+        >
+          <li>
+            <a
+              href="https://github.com/khaerilanwar"
+              target="_blank"
+              class="mr-4 hover:underline md:mr-6"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCobKryu4ZwDlKOOqw-lPjUA"
+              target="_blank"
+              class="mr-4 hover:underline md:mr-6"
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/saryat.saryat"
+              target="_blank"
+              class="mr-4 hover:underline md:mr-6"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/khaerilanwr_/"
+              target="_blank"
+              class="mr-4 hover:underline md:mr-6"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/muhammad-khaeril-anwar-09a538227/"
+              target="_blank"
+              class="mr-4 hover:underline md:mr-6"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023
+          <a href="/" class="hover:underline font-courgette">Halo Anwar</a>. All
+          Rights Reserved.</span
+        >
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- TOMBOL UNTUK MENGGANTI DARK DAN LIGHT MODE -->
+    <input type="checkbox" id="toggle" class="hidden" />
+    <label for="toggle">
+      <div
+        data-tooltip-target="tooltip-left"
+        data-tooltip-placement="left"
+        class="fixed bottom-2 right-2 mb-2 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer"
+      >
+        <i id="ikon" class="m-auto fa-solid fa-moon"></i>
+      </div>
+      <div
+        id="tooltip-left"
+        role="tooltip"
+        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+      >
+        dark
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+    </label>
+    <!-- END TOMBOL UNTUK MENGGANTI DARK DAN LIGHT MODE -->
+
+    <!-- link cdn Flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <!-- link js -->
+    <script>
+      // KODE JS UNTUK TOMBOL DARK MODE
+      const checkbox = document.querySelector("#toggle");
+      const tooltip = document.querySelector("#tooltip-left");
+      const html = document.querySelector("html");
+      const ikon = document.querySelector("#ikon");
+
+      checkbox.addEventListener("change", function (event) {
+        // Mendapatkan status checked checkbox
+        var isChecked = event.target.checked;
+
+        // Melakukan sesuatu ketika status checked berubah
+        if (isChecked) {
+          console.log("Checkbox dicentang");
+          sessionStorage.setItem("darkMode", "true");
+          console.log(sessionStorage.getItem("darkMode"));
+          // Lakukan tindakan yang diinginkan ketika checkbox dicentang
+        } else {
+          console.log("Checkbox tidak dicentang");
+          sessionStorage.removeItem("darkMode");
+          sessionStorage.setItem("darkMode", "false");
+          console.log(sessionStorage.getItem("darkMode"));
+          // Lakukan tindakan yang diinginkan ketika checkbox tidak dicentang
+        }
+
+        if (sessionStorage.getItem("darkMode") === "true") {
+          // Terapkan gaya dark mode
+          html.classList.add("dark");
+          tooltip.innerHTML = "light";
+          ikon.classList.replace("fa-moon", "fa-lightbulb");
+        } else {
+          // Terapkan gaya light mode
+          ikon.classList.replace("fa-lightbulb", "fa-moon");
+          tooltip.innerHTML = "dark";
+          html.classList.remove("dark");
+        }
+      });
+
+      if (sessionStorage.getItem("darkMode") === "true") {
+        // Terapkan gaya dark mode
+        html.classList.add("dark");
+        tooltip.innerHTML = "light";
+        ikon.classList.replace("fa-moon", "fa-lightbulb");
+      } else {
+        // Terapkan gaya light mode
+        ikon.classList.replace("fa-lightbulb", "fa-moon");
+        tooltip.innerHTML = "dark";
+        html.classList.remove("dark");
+      }
+    </script>
+  </body>
+</html>

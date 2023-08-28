@@ -5,7 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        courgette:['Courgette']
+        courgette:['Courgette'],
+        roboto:['Roboto'],
+        courier:['Courier Prime']
       },
       colors: {
         primer: ['#9681EB'],
